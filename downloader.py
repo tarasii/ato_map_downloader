@@ -37,7 +37,6 @@ def process_dt(dt):
 
     else:
       print file_str, html_str
-      #print html
       f = open(file_str, 'wb')
       f.write(html)
       f.close()
@@ -47,7 +46,7 @@ def process_dt(dt):
     print "-", file_str, html_str
     
 
-#get images from startday to today 
+#get images from start day to today 
 while tmp_dt <= cur_dt:
   process_dt(tmp_dt)
   tmp_dt = tmp_dt + datetime.timedelta(1)
